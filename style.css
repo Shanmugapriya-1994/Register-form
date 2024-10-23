@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arima", system-ui;
+   
+}
+body{
+     background-color: rgba(113, 133, 237, 0.397);
+     
+}
+.form {
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(172, 206, 250);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin: 10x;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 30PX;
+    width: 30%;
+}
+
+.form__name,
+.form__mail,
+.form__pwd {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input:focus {
+    outline-color: rgb(8, 44, 129);
+}
+
+button {
+    background-color: rgba(66, 141, 202, 0.897);
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid rgb(16, 61, 195);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:disabled{
+      background-color: gray;
+}
+.hidden {
+    display: block;
+    color: red;
+    font-size: 14px;
+}
+.form__req1,
+.form__req11,
+.form__req2,
+.form__req3 {
+    display: none;
+}
+/* media Queries */
+@media screen and (max-width:600px) {
+    body{
+        font-size: 10px;
+    }
+    
+} 

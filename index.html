@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- CDN link for Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+
+    <!-- Linl for my stylesheet -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="form">
+        
+        <div class="form__head">
+            <h1>Registration Form</h1>
+        </div>
+
+
+    <div  class="form__name">
+    <label>Name : </label>
+    <input type="text" id="nameInput" value="" placeholder="Enter Your Name">
+    <p class="hidden form__req1"> * This Field is Required</p>
+    </div>
+
+    <div class="form__mail">
+     <label> Email : </label>
+        <input type="email" id="mailInput" placeholder="Enter Your Mail-id">
+        <p class="hidden form__req11"> * This Field is Required</p>
+        <span class="hidden form__req2"> * Enter the valid Email Address.</span>
+    </div>
+
+    <div class="form__pwd">
+       <label> Password : </label>
+        <input type="password" id="pwdInput" placeholder="Enter Password">
+        <span class="hidden form__req3"> * password must have at least 6 characters.</span>
+      </div>
+     
+      <div>
+        <button id="form__btn">Submit </button>
+      </div>
+      <div class="success"></div>
+          </div>
+          
+<script src="script.js"></script>
+    
+</body>
+</html>
